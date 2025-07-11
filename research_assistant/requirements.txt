@@ -1,0 +1,21 @@
+# requirements.txt
+# This should be the fully compatible, modern LangChain + LangGraph stack.
+# REQUIRES PYTHON 3.9 OR HIGHER.
+
+langchain-openai==0.3.27
+langchain-community==0.3.27
+langchain-core==0.3.68
+langgraph==0.5.2           # Corrected to the latest AVAILABLE version from your list
+
+# API Clients
+openai==1.93.3
+google-search-results==2.4.2
+googletrans==4.0.2
+wolframalpha==5.0.0
+
+# Utilities
+PyPDF2==3.0.1
+transformers==4.42.0
+python-dotenv==1.1.1
+arxiv==2.1.0
+langchain-google-genai
