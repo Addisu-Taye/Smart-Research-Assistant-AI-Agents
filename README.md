@@ -1,40 +1,19 @@
-# 🤖🔍 AI Research Assistant System
+# 🤖🔍 Smart Research Assistant Agent System
 
 ## Overview
 A **multi-agent AI system** that automates academic research by coordinating 7 specialized agents to gather, analyze, and summarize information from diverse sources.
 
 ## 🏗 System Architecture
 
-```mermaid
-graph TD
-    A[User] -->|Research Query| B[React Frontend]
-    B -->|HTTP Request| C[FastAPI Backend]
-    C --> D[Coordinator Agent]
-    
-    D --> E[Web Scraper Agent]
-    E --> F[(Web/APIs)]
-    E --> G[(PDFs)]
-    
-    D --> H[Summarizer Agent]
-    H --> I[LLM (Ollama/OpenAI)]
-    
-    D --> J[Fact-Checker Agent]
-    J --> K[(WolframAlpha)]
-    
-    D --> L[Translation Agent]
-    L --> M[(LibreTranslate)]
-    
-    D --> N[Sentiment Analyzer]
-    N --> O[[HuggingFace]]
-    
-    D --> P[Citation Formatter]
-    
-    subgraph Legend
-        X[Agent] -.-> Y[[External Service]]
-        X --> Z[(Data Source)]
-    end
-![Data Flow](./assets/dataflow.png)
-![Deployment](./assets/deployment.png)
+![Data Flow](assets/architecture.png)
+
+## 🏗 System Data Flow
+
+![Data Flow](assets/dataflow.png)
+
+## 🏗 System Deployment
+
+![Deployment](assets/deployment.png)
 
 ## ✨ Key Features
 - **7-Agent Workflow**: Coordinator, Scraper, Summarizer, Fact-Checker, Translator, Visualizer, Synthesizer  
