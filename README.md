@@ -45,7 +45,7 @@ A **multi-agent AI system** that automates academic research by coordinating 7 s
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Addisu-Taye/ai-research-assistant.git
+git clone https://github.com/Addisu-Taye/Smart-Research-Assistant-AI-Agents.git
 cd ai-research-assistant/backend
 ```
 
